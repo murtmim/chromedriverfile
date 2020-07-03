@@ -102,7 +102,13 @@ public class BrowserSetUp {
 						driverCapability.setCapability("javascriptEnabled", "true");
 						ChromeOptions cop = new ChromeOptions();
 						cop.merge(driverCapability);
-						cop.setHeadless(true);
+						cop.addArguments("start-maximized"); // open Browser in maximized mode
+						cop.addArguments("disable-infobars"); // disabling infobars
+						cop.addArguments("--disable-extensions"); // disabling extensions
+						cop.addArguments("--disable-gpu"); // applicable to windows os only
+						cop.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+						cop.addArguments("--no-sandbox"); // Bypass OS security model
+						//cop.setHeadless(true);
 						if (executionFormat.equals("grid")) {
 							webDriver.set(new RemoteWebDriver(remoteServerUrl, driverCapability));
 						} else {
