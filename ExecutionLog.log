@@ -1,0 +1,864 @@
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  16:43:31
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  14:58:38
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW443971', ip: '172.17.88.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
+Session ID: 96ea02d794907b591ee7a62715fdeec3
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  15:09:03
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW443971', ip: '172.17.88.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
+Session ID: b1874300ddb06fdb23e2269d330f49e7
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  16:10:44
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  16:26:43
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  16:39:56
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira1, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  12:02:11
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira1 is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira1, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  12:02:55
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira1 is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira1, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  12:03:10
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira1 is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira1, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  12:03:26
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira1 is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  12:11:29
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text May is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text November is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  14:54:05
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  15:22:40
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  13:42:12
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  LoginValidation
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://qa.nesl.co.in/NESL_Portal/login.html, TestCaseName=TC_1, SelectEntity=Legal Entity User, EntityName=Garima EnterprisesXXXXXX111B, UserID=1, Password=P@ssword@123, rowCount=1}
+Start time                :  09:44:19
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://qa.nesl.co.in/NESL_Portal/login.htmlis loaded 
+ [ERROR] [BaseTest] [selectDropDownByVisibleText] Unable to select the dropdown; The element with id: selEntity not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"selEntity"}
+  (Session info: chrome=72.0.3626.109)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '10.40.227.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.109, webStorageEnabled: true}
+Session ID: 23e4db4ecb7f4377c34968a98b309d7d
+*** Element info: {Using=id, value=selEntity}
+	at com.tcs.saf.base.BasePage.selectDropDownByVisibleText(BasePage.java:527)
+	at com.tcs.pom.helper.Login.Login(Login.java:31)
+	at com.tcs.saf.test.LoginValidation.loginTest(LoginValidation.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  09:45:54
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=72.0.3626.109)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '10.40.227.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.109, webStorageEnabled: true}
+Session ID: 2f64acabe01595570f9f29d5f92d4272
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  09:46:01
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=72.0.3626.109)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '10.40.227.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.109, webStorageEnabled: true}
+Session ID: 915ae6aa6e998bfaf46a2fa3eaa27f0f
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  09:46:06
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text May is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text November is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  09:46:56
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [ERROR] [DataSheet] [getColumnCount] No sheet found with the class name HeaderNavValidationsCucumber 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  12:22:25
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '10.40.244.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 02181375b7d8a5c4b0fa14be3b3e5086
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  12:22:46
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '10.40.244.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 399177360dbb5abb3c2667ee0a9151b5
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest1, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=May, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=November, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=2}
+Start time                :  12:22:54
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text May is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text November is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  12:24:02
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  12:28:30
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [ERROR] [BaseTest] [type] The element with name: userName not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"userName"}
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '10.40.244.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: af63ad51502219d99fd10bc2f46a3da5
+*** Element info: {Using=name, value=userName}
+	at com.tcs.saf.base.BasePage.type(BasePage.java:399)
+	at com.tcs.pom.helper.FlightBookingImpl.newtourslogin(FlightBookingImpl.java:38)
+	at com.tcs.saf.test.FlightBooking.FlightbookingTest(FlightBooking.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  12:35:50
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  13:21:34
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  13:21:36
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  LoginValidation
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://qa.nesl.co.in/NESL_Portal/login.html, TestCaseName=TC_1, SelectEntity=Legal Entity User, EntityName=Garima EnterprisesXXXXXX111B, UserID=1, Password=P@ssword@123, rowCount=1}
+Start time                :  15:03:59
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://qa.nesl.co.in/NESL_Portal/login.htmlis loaded 
+ [ERROR] [BaseTest] [selectDropDownByVisibleText] Unable to select the dropdown; The element with id: selEntity not found 
+ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"selEntity"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: '01HW1074112', ip: '169.254.200.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\209564\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: 2bb782cc3ac16374551e612761326ebd
+*** Element info: {Using=id, value=selEntity}
+	at com.tcs.saf.base.BasePage.selectDropDownByVisibleText(BasePage.java:527)
+	at com.tcs.pom.helper.Login.Login(Login.java:31)
+	at com.tcs.saf.test.LoginValidation.loginTest(LoginValidation.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+[INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  15:35:53
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  13:48:06
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  10:58:11
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ [INFO] [BaseTest] [setMyBrowser] 
+
+Test Case Name            :  FlightBooking
+Execution using Data Row  :{Browser=Chrome, Execution Status=Y, URL=http://newtours.demoaut.com/, TestCaseName=FlightbookingTest, Username=munira, Password=test, Triptype=1, Passcount=2, Departingfrom=London, DepartingMonth=April, DepartingDate=3, Arrivingin=Frankfurt, ArrivingMonth=December, ArrivingDate=3, ServiceClass=2, AirlinePref=Unified Airlines, DepartureFlight=2, ArrivalFlight=2, Pass1_Firstname=Rakesh, Pass1_Lastname=Patel, Pass1_MealPref=Diabetic, Pass2_Firstname=Mahesh, Pass2_Lastname=Patel, Pass2_MealPref=Vegetarian, CreditCardType=Visa, CreditCardNumber=4567894567, rowCount=1}
+Start time                :  11:15:07
+------------------------------------------------------------------------------------------------------------------------------------- 
+ [INFO] [BaseTest] [setMyBrowser] Browser type is:Chrome 
+ [INFO] [BaseTest] [setMyBrowser] Test initialization 
+ [INFO] [BaseTest] [setMyBrowser] Calling startWebDriverClient for browser: Chrome 
+ [INFO] [BaseTest] [launchPageURL] The Base URL:http://newtours.demoaut.com/is loaded 
+ [INFO] [BaseTest] [type] String munira is send to element with name: userName 
+ [INFO] [BaseTest] [type] String test is send to element with name: password 
+ [INFO] [BaseTest] [click] The element with name: login is clicked 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 2 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text London is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text April is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Frankfurt is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text December is selected 
+ [INFO] [BaseTest] [selectDropDownByValue] The dropdown option with value 3 is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Unified Airlines is selected 
+ [INFO] [BaseTest] [click] The element with name: findFlights is clicked 
+ [INFO] [BaseTest] [click] The element with name: reserveFlights is clicked 
+ [INFO] [BaseTest] [type] String Rakesh is send to element with name: passFirst0 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast0 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Diabetic is selected 
+ [INFO] [BaseTest] [type] String Mahesh is send to element with name: passFirst1 
+ [INFO] [BaseTest] [type] String Patel is send to element with name: passLast1 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Vegetarian is selected 
+ [INFO] [BaseTest] [selectDropDownByVisibleText] The dropdown option with text Visa is selected 
+ [INFO] [BaseTest] [type] String 4567894567 is send to element with name: creditnumber 
+ [INFO] [BaseTest] [click] The element with name: buyFlights is clicked 
+ [INFO] [BaseTest] [click] The element with linkText: SIGN-OFF is clicked 
+ 
