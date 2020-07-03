@@ -108,6 +108,7 @@ public class BrowserSetUp {
 						cop.addArguments("--disable-gpu"); // applicable to windows os only
 						cop.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 						cop.addArguments("--no-sandbox"); // Bypass OS security model
+						cop.addArguments("--headless");
 						//cop.setHeadless(true);
 						if (executionFormat.equals("grid")) {
 							webDriver.set(new RemoteWebDriver(remoteServerUrl, driverCapability));
