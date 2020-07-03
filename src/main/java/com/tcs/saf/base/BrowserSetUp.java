@@ -100,10 +100,13 @@ public class BrowserSetUp {
 								browserProperties.getString("webdriver_chrome_driver"));
 						driverCapability.setCapability("acceptSslCerts", "true");
 						driverCapability.setCapability("javascriptEnabled", "true");
+						ChromeOptions cop = new ChromeOptions();
+						cop.merge(driverCapability);
+						cop.setHeadless(true);
 						if (executionFormat.equals("grid")) {
 							webDriver.set(new RemoteWebDriver(remoteServerUrl, driverCapability));
 						} else {
-							webDriver.set(new ChromeDriver(driverCapability));
+							webDriver.set(new ChromeDriver(cop));
 						}
 
 					} catch (IllegalStateException e) {
