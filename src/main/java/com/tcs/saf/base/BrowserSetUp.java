@@ -24,7 +24,7 @@ import org.testng.ITestResult;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.chrome.ChromeOptions;
 import jxl.JXLException;
 import jxl.read.biff.BiffException;
 import jxl.write.biff.RowsExceededException;
